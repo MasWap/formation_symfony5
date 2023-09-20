@@ -11,7 +11,7 @@ class QuestionController
      * @Route("/")
      */
     public function homepage(){
-        return new Response('Test');
+        return new Response('Test2');
     }
 
     /**

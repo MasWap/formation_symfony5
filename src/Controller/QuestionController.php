@@ -11,15 +11,6 @@ class QuestionController
      * @Route("/")
      */
     public function homepage(){
-        return new Response('Test2');
-    }
-
-    /**
-     * @Route("/question/{mavariable}")
-     */
-    public function show($mavariable){
-        return new Response(sprintf(
-            'Ceci est inscrit dans l'."'".'URL'  . ' : ' . $mavariable
-        ));
+        return $this->render('base.html.twig');
     }
 }

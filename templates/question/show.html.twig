@@ -1,0 +1,22 @@
+{% extends '@WebProfiler/Profiler/base.html.twig' %}
+
+{% block title %} Questions: {{ question }}{% endblock %}
+
+{% block body %}
+<h1>{{ question }}</h1>
+
+{# oh, je suis un commentaire #}
+
+<div>
+    Eventually, we'll print the full question here !
+</div>
+
+<h2>
+    Answers ({{ answers|length }}
+</h2>
+
+<ul>
+    {% for answer in answers %}
+        <li>{{ answer }}</li>
+    {% endfor %}
+</ul>
